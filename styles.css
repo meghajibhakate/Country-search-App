@@ -19,7 +19,7 @@
 input {
     padding: 5px;
     border: none;
-    width: 40%;
+    width: 100%;
     border-radius: 6px;
     height: 45px;
     font-size: 22px;
@@ -28,12 +28,12 @@ input {
 
 
 
-.countries {
+/* .countries {
     padding: 22px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 54px;
-}
+} */
 
 
 .country {
@@ -77,4 +77,37 @@ button{
 button:hover{
     background-color: #35aced;
     color: #fff;
+}
+
+
+@media screen and (min-width: 600px) {
+    .countries {
+        padding: 22px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 54px;
+    }
+    input {
+        padding: 5px;
+        width: 50%;
+    }
+  }
+  @media screen and (min-width: 880px) {
+    .countries {
+        padding: 22px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 54px;
+    }
+    input {
+        padding: 5px;
+        width: 40%;
+    }
+  }
+  
+  .countries {
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 54px;
 }
